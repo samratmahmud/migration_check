@@ -30,36 +30,41 @@ function Navbar() {
   };
   return (
     <div className="container">
-      <div className="mt-7 lg:mb-[75px] mb-10 flex justify-between items-center">
-        <Link href={"/"}>
-          <div className="text-lg font-semibold text-neutral-600">
-            <span className="bg-100 text-linear">Mig</span>ration
-          </div>
+      <div className="pt-7 lg:mb-[75px] mb-10 flex justify-between items-center">
+        <Link
+          href={"/"}
+          data-aos="fade-right"
+          className="text-lg font-semibold text-neutral-600"
+        >
+          <span className="bg-100 text-linear">Mig</span>ration
         </Link>
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <div className="flex gap-8 items-center">
             {linkName.map(({name, url}, index) => (
               <div
+                data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
                 key={name + index}
                 className="text-md text-neutral-500 hover:underline duration-500"
               >
                 <Link href={url}>{name}</Link>
               </div>
             ))}
-            <Link href={"/"} className="hover:bg-slate-100 duration-500">
+            <Link
+              href={"/"}
+              data-aos="fade-left"
+              className="hover:bg-slate-100 duration-500"
+            >
               <button className="text-linear bg-100 text-sm font-bold border-[1px] border-amber-300 py-4 px-8 rounded-lg">
                 Log In
               </button>
             </Link>
           </div>
         </div>
-        <div className="lg:hidden">
-          <button onClick={toggle}>
-            <img className="w-7" src="./picture/burger-menu.png" alt="" />
-          </button>
+        <div role="button" className="md:hidden" onClick={toggle}>
+          <img className="w-7" src="./picture/burger-menu.png" alt="" />
         </div>
       </div>
-      <div>
+      <div className="md:hidden">
         <Drawer onClose={toggle} open={open} direction="left">
           <div className="p-5 flex flex-col justify-between h-screen">
             <div className="">

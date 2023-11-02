@@ -7,14 +7,14 @@ function About_us() {
     <>
       <div className="container">
         <div className="lg:flex flex flex-col-reverse lg:flex-row justify-between items-center gap-7 md:mb-36">
-          <div>
+          <div data-aos="fade-right">
             <img
               className="hidden md:block"
               src="./picture/Frame 64.png"
               alt=""
             />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <div className="max-w-[540px] md:text-3xl text-xl font-bold text-gray-800 mb-10">
               Where there is a chance, there is a way!
             </div>
@@ -39,7 +39,7 @@ function About_us() {
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-right">
         <img
           className="md:hidden rounded-lg w-full"
           src="./picture/Frame 64 (1).png"

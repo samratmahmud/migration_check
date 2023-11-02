@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-let contain = [
+let cards = [
   {
     pic: "./picture/Frame 36.svg",
     name: "To Work",
@@ -43,16 +43,23 @@ let contain = [
 function Container() {
   return (
     <div className="container">
-      <div className="max-w-[540px] lg:text-3xl text-xl font-bold text-gray-800 mb-4 m-auto text-center">
+      <div
+        data-aos="zoom-in"
+        className="max-w-[540px] lg:text-3xl text-xl font-bold text-gray-800 mb-4 m-auto text-center"
+      >
         Live your dream in Germany
       </div>
-      <div className="max-w-[480px] text-sm lg:mb-16 mb-7 text-neutral-500 m-auto text-center">
+      <div
+        data-aos="zoom-in"
+        className="max-w-[480px] text-sm lg:mb-16 mb-7 text-neutral-500 m-auto text-center"
+      >
         We are strategy consultants who work with startup strategies and help
         promote and sell your product
       </div>
       <div className="grid lg:grid-cols-3 justify-between gap-7 md:mb-16 mb-7">
-        {contain.map((item, index) => (
+        {cards.map((item, index) => (
           <div
+            data-aos={`${index % 2 === 0 ? "zoom-in" : "zoom-out"}`}
             key={index}
             className="flex flex-col items-center lg:max-w-[350px] lg:p-7 p-3 border-[2px] border-amber-200 rounded-2xl"
           >
@@ -68,18 +75,16 @@ function Container() {
           </div>
         ))}
       </div>
-      <div>
-        <Link href={"/"}>
-          <button className="flex gap-2 p-3 hover:bg-slate-100 rounded-2xl m-auto text-center md:mb-36 mb-10">
-            <span className="text-sm font-bold bg-100 text-linear">
-              All Services
-            </span>
-            <span>
-              <img src="./picture/Icon.svg" alt="" />
-            </span>
-          </button>
-        </Link>
-      </div>
+      <Link href={"/"} data-aos="fade-up">
+        <button className="flex gap-2 p-3 hover:bg-slate-100 rounded-2xl m-auto text-center md:mb-36 mb-10">
+          <span className="text-sm font-bold bg-100 text-linear">
+            All Services
+          </span>
+          <span>
+            <img src="./picture/Icon.svg" alt="" />
+          </span>
+        </button>
+      </Link>
     </div>
   );
 }

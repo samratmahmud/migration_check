@@ -6,10 +6,10 @@ function Destination() {
     <div className="bg-200">
       <div className="container ">
         <div className="lg:flex-row lg:gap-7 gap-6 justify-between items-center lg:mb-[140px] mb-10 flex flex-col-reverse">
-          <div>
+          <div data-aos="fade-left">
             <img src="./picture/study-germany 1.png" alt="" />
           </div>
-          <div>
+          <div data-aos="fade-right">
             <div className="md:max-w-[540px] md:text-3xl text-xl font-bold text-gray-900 mb-6 mt-10 lg:mt-0">
               Fly Your Dream Destination
             </div>

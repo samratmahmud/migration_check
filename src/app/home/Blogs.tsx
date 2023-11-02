@@ -26,16 +26,23 @@ function Blogs() {
   return (
     <div>
       <div className="container lg:mb-36 mb-10">
-        <div className="max-w-[573px] text-gray-800 lg:text-3xl text-lg font-bold mb-4 m-auto text-center">
+        <div
+          data-aos="zoom-in"
+          className="max-w-[573px] text-gray-800 lg:text-3xl text-lg font-bold mb-4 m-auto text-center"
+        >
           Read our blogs to learn more about immigration
         </div>
-        <div className="max-w-[512px] text-neutral-500 text-sm lg:text-md m-auto text-center lg:mb-16 mb-7">
+        <div
+          data-aos="zoom-in"
+          className="max-w-[512px] text-neutral-500 text-sm lg:text-md m-auto text-center lg:mb-16 mb-7"
+        >
           Our CyberNews Investigation team uses white hacking techniques to find
           and safely cybersecurity threats & vulnerabilities.
         </div>
         <div className="lg:flex lg:gap-7 grid gap-4">
           {blogAll.map((item, index) => (
             <div
+              data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
               key={index}
               className="border-[1px] border-amber-200 rounded-2xl"
             >

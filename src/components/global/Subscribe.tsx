@@ -3,7 +3,7 @@ import React from "react";
 
 function Subscribe() {
   return (
-    <div className="lg:container">
+    <div className="lg:container" data-aos="zoom-out">
       <div
         className="bg-pink-300 rounded-3xl bg-cover bg-no-repeat bg-[top_center]"
         style={{

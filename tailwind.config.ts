@@ -54,6 +54,7 @@ const config: Config = {
       100: "linear-gradient(225deg, rgb(255 199 95) 0%, rgb(255 111 145) 100%)",
       200: "linear-gradient(225deg, rgb(255 199 95 / 10%) 0%, rgb(255 111 145 / 10%) 100%)",
       300: "linear-gradient(225deg, rgb(255 199 95 / 10%) 0%, rgb(255 111 145 / 10%) 100%)",
+      bgImage: "url('/picture/pexels-pixabay-531880.jpg')",
     },
     container: {
       center: true,

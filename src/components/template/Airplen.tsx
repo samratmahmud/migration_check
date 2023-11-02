@@ -11,7 +11,7 @@ function Airplen(props: airplen) {
   return (
     <div className="flex gap-4 mb-4 last:mb-10 max-w-[500px]">
       <div>
-        <div className="w-7">
+        <div data-aos="zoom-in" className="w-7">
           <img className="" src={pic} alt="" />
         </div>
       </div>

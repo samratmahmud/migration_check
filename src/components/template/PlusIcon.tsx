@@ -20,6 +20,7 @@ function PlusIcon(props: IconProps) {
           {title}
         </div>
         <div
+          data-aos="zoom-in"
           onClick={handleClick}
           className="max-w-[622px] lg:text-md text-sm text-neutral-500 text-left"
         >

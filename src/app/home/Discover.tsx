@@ -1,5 +1,4 @@
 import Airplen from "@/components/template/Airplen";
-import Link from "next/link";
 import React from "react";
 
 function Discover() {
@@ -7,11 +6,13 @@ function Discover() {
     <div>
       <div className="container">
         <div className="lg:flex justify-between items-center gap-20 lg:mb-36">
-          <div>
+          <div data-aos="fade-right">
             <div className="max-w-[540px] lg:text-3xl text-xl font-bold text-gray-800 mb-10">
               <span className=" relative">
                 Discover your
                 <img
+                  data-aos="fade-down"
+                  data-aos-duration="2000"
                   className=" absolute -top-8 -right-16"
                   src="./picture/Highlight 13.png"
                   alt=""
@@ -32,12 +33,12 @@ function Discover() {
               />
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block" data-aos="fade-left">
             <img src="./picture/BG.png" alt="" />
           </div>
         </div>
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden" data-aos="fade-left">
         <img className="w-full" src="./picture/BG (1).png" alt="" />
       </div>
     </div>

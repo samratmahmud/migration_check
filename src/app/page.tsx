@@ -1,3 +1,4 @@
+"use client";
 import Header from "./home/Header";
 import Packages from "./home/Packages";
 import About_us from "./home/About_us";
@@ -10,8 +11,16 @@ import Blogs from "./home/Blogs";
 import Subscribe from "../components/global/Subscribe";
 import Footer from "@/components/global/Footer";
 import Question from "@/components/global/Question";
+import {useEffect} from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Homepage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    });
+  });
   return (
     <div>
       <Navbar />
@@ -29,3 +38,5 @@ export default function Homepage() {
     </div>
   );
 }
+///
+//className="bg-bgImage bg-no-repeat bg-fixed"

@@ -45,7 +45,10 @@ function Feadback() {
     <div className="lg:mb-[140px] mb-20">
       <div className="container">
         <div className="bg-primary-400 lg:py-24 py-10">
-          <div className="max-w-[632px] lg:text-3xl text-lg  font-bold text-gray-800 m-auto text-center lg:mb-16 mb-7">
+          <div
+            data-aos="fade-down"
+            className="max-w-[632px] lg:text-3xl text-lg  font-bold text-gray-800 m-auto text-center lg:mb-16 mb-7"
+          >
             We are happy to share our client’s review
           </div>
           <div className="">
@@ -65,7 +68,7 @@ function Feadback() {
                 },
               ]}
             >
-              <div className="px-3.5">
+              <div className="px-3.5" data-aos="fade-right">
                 <Profile
                   title="OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
                   picture="./picture/Ellipse 21.png"
@@ -74,7 +77,7 @@ function Feadback() {
                   star="./picture/star.png"
                 />
               </div>
-              <div className="px-3.5">
+              <div className="px-3.5" data-aos="fade-left">
                 <Profile
                   title="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
                   picture="./picture/Ellipse 21 (1).png"
@@ -83,7 +86,7 @@ function Feadback() {
                   star="./picture/star.png"
                 />
               </div>
-              <div className="px-3.5">
+              <div className="px-3.5" data-aos="fade-right">
                 <Profile
                   title="OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
                   picture="./picture/Ellipse 21.png"
@@ -92,7 +95,7 @@ function Feadback() {
                   star="./picture/star.png"
                 />
               </div>
-              <div className="px-3.5">
+              <div className="px-3.5" data-aos="fade-left">
                 <Profile
                   title="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
                   picture="./picture/Ellipse 21 (1).png"

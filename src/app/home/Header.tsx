@@ -77,6 +77,7 @@ function Header() {
       <div className="lg:flex grid grid-cols-2 justify-between rounded-3xl border border-neutral-400 bg-gray-50 shadow-xl lg:mr-[5%] lg:mb-36 lg:-mt-14 -mt-10 mb-10 relative">
         {details.map((item, index) => (
           <div
+            data-aos="zoom-in"
             key={index}
             className="py-6 md:px-8 px-4 flex flex-col justify-center items-center"
           >

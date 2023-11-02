@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="container" id="footer">
       <div className="lg:flex grid grid-cols-2 gap-7 lg:gap-0 justify-between lg:mt-[140px] mt-10 mb-16">
-        <div className="col-span-2">
+        <div className="col-span-2" data-aos="fade-right">
           <div className="text-lg font-semibold text-neutral-600 mb-6">
             <span className="bg-100 text-linear">Mig</span>ration
           </div>
@@ -16,19 +16,31 @@ function Footer() {
           </div>
           <div className="hidden lg:block justify-end">
             <div className="flex gap-3">
-              <Link href={"https://twitter.com/"}>
+              <Link
+                href={"https://twitter.com/"}
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <img className="w-10" src="./picture/social (1).png" alt="" />
               </Link>
-              <Link href={"https://www.facebook.com/"}>
+              <Link
+                href={"https://www.facebook.com/"}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <img className="w-10" src="./picture/social.png" alt="" />
               </Link>
-              <Link href={"https://www.linkedin.com/"}>
+              <Link
+                href={"https://www.linkedin.com/"}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <img className="w-10" src="./picture/social (2).png" alt="" />
               </Link>
             </div>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <Helpcenter
             name="Help"
             title1="Customer Support"
@@ -37,7 +49,7 @@ function Footer() {
             title4="Privacy Policy"
           />
         </div>
-        <div>
+        <div data-aos="fade-down">
           <Helpcenter
             name="Resources"
             title1="Free eBooks"
@@ -47,7 +59,7 @@ function Footer() {
           />
         </div>
         <div className="flex justify-between col-span-2 gap-7">
-          <div>
+          <div data-aos="fade-left">
             <Helpcenter
               name="Extra Links"
               title1="Customer Support"
