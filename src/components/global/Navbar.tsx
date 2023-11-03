@@ -54,7 +54,7 @@ function Navbar() {
               data-aos="fade-left"
               className="hover:bg-slate-100 duration-500"
             >
-              <button className="text-linear bg-100 text-sm font-bold border-[1px] border-amber-300 py-4 px-8 rounded-lg">
+              <button className="text-linear bg-100 text-sm font-bold border-[1px] border-amber-300 py-3 px-8 rounded-lg">
                 Log In
               </button>
             </Link>

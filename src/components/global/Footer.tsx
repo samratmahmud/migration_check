@@ -19,7 +19,7 @@ function Footer() {
               <Link
                 href={"https://twitter.com/"}
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 <img className="w-10" src="./picture/social (1).png" alt="" />
               </Link>
@@ -33,7 +33,7 @@ function Footer() {
               <Link
                 href={"https://www.linkedin.com/"}
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-duration="3000"
               >
                 <img className="w-10" src="./picture/social (2).png" alt="" />
               </Link>

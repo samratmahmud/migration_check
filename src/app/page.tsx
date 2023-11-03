@@ -11,19 +11,10 @@ import Blogs from "./home/Blogs";
 import Subscribe from "../components/global/Subscribe";
 import Footer from "@/components/global/Footer";
 import Question from "@/components/global/Question";
-import {useEffect} from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function Homepage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-    });
-  });
   return (
     <div>
-      <Navbar />
       <Header />
       <About_us />
       <Packages />
